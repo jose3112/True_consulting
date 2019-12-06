@@ -1,0 +1,147 @@
+//Variables 
+$body-bg:#c1bdba;
+$form-bg:#13232e;
+$blanco: white;
+
+$color-principal: coral;
+$color-principal-brillo: lighten($color-principal, 5%);
+$color-principal-oscuro: darken($color-principal, 5%);
+
+$gris-luz: #a0b3b0;
+$gris: #ddd;
+
+$delgado: 300;
+$normal: 400;
+$fuerte: 600;
+$bordes: 4px;
+
+$fuente-principal:'Rubik', sans-serif;
+$fuente-secundaria:arial;
+
+//Elementos
+
+*{
+    padding: 0;
+    margin: 0;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    background: $body-bg;
+    font-family: $fuente-principal;
+}
+a{
+    text-decoration: none;
+    color:$color-principal;
+}
+
+.contenedorFormularios{
+    background: rgba($form-bg, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: $bordes;
+box-shadow: 0 4px 18px 4px rgba($form-bg, 0.3)
+}
+.contenidoTabla{
+    list-style: none;
+    padding: 0%;
+    margin: 0 0 40px 0;
+ 
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+h1{
+    text-align: center;
+    color:$blanco;
+    font-weight: $delgado;
+    margin: 0 0 40px;
+}
+label{
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba($blanco, 0.5);
+    transition: all 0.15s ease;
+    backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 20px;
+
+    .req{
+        margin: 2px;
+        color: $color-principal;
+    }
+}
+label.active{
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+
+    .req{
+        opacity: 0;
+    }
+}
+label.highlight{
+    color: $blanco;
+}
+input{
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid $gris-luz;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: $blanco;
+    border-radius: 6px;
+
+    &:focus{
+        outline: none;
+        border-color: $color-principal;
+    }
+}
+.contenedor-input{
+    position: relative;
+    margin-bottom: 43px;
+}
+.button{
+    border:0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 20px;
+    background: $color-principal;
+    color: $blanco;
+    transition: all 0.5s;
+    -webkit-appearance: none;
+
+    &:hover, &:focus{
+        background: $color-principal-oscuro;
+    }
+}
+
+.button-block{
+    display: block;
+    width: 100%;
+}
+
+.contenedorLogo{
+    img{
+        display: block;
+        
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 520px;
+    height: 110px;
+}}

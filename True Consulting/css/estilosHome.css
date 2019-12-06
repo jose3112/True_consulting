@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: "Rubik", sans-serif;
+}
+.logo_usuario_cerrar{
+    width: 100%;
+    height: 10%;
+    background: coral;
+    
+}
+.logo_usuario_cerrar ul{
+margin: 0;
+list-style: none;
+padding: 0;
+display: flex;
+}
+
+.logo_usuario_cerrar li{
+    display: block;
+    padding: 5px 35px;
+    color: black;
+    text-decoration: none;
+    flex-grow: 1;
+}
+img.LogoHome{
+    text-align: left;
+    max-width: 100%;
+    width: 320px;
+    height: 70px;
+}
+.boton {
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 20px;
+    background: coral;
+    color: white;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-appearance: none;
+  }
+  
+  .boton:hover, .boton:focus {
+    background: #ff6c37;
+  }
+.botonBloque{
+    display: block;
+    
+}
+
+h1 {
+    text-align: center;
+   
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+a{
+    text-decoration: none;
+    color: coral;
+    -webkit-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    display: block;
+
+}
+a:hover{
+    color:#ff6c37;
+}
+
+.contenedor_tabs{
+    list-style: none;
+    padding: 0 33%;
+    margin: 0px;
+    display: flex;
+  align-content:justify ;
+  height: 20%;
+  background: cyan;
+  
+}
+.contenedor_tabs:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.contenedor_tabs li a {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 15px;
+    background: cyan;
+    font-size: 20px;
+    float: left;
+    
+text-align:justify;
+cursor: pointer;
+-webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.contenedor_tabs li a:hover{
+    background:#ff6c37 ;
+    color: white;
+}
+.contenedor_tabs .active a{
+    background: coral ;
+    color: white;
+}
+.contenido-tab > div:last-child{
+    display: none;
+}
+
+.botonReg{
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 2rem;
+    background: coral;
+    color: white;
+    -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-appearance: none;
+}
+
+.botonReg:hover, .botonReg:focus {
+  background: #ff6c37;
+}
+
+.boton-blockR {
+  display: block;
+  width: 100%;
+}
+
+input {
+    font-size: 15px;
+    display: inline-block;
+    width: 70%;
+    height: 60%;
+    padding: 5px 10px;
+    border: 1px solid #a0b3b0;
+    align-items:left;
+
+    border-radius: 6px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: coral;
+  }
+  
+  .contenedor-input {
+    position: relative;
+  }
+  label{
+      font-size: 15px;
+      width: 30%;
+    
+      left: 13px;
+  }
+
+input:read-only{
+background:rgb(161, 161, 161);
+color:darkred;
+}
